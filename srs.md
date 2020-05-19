@@ -80,8 +80,8 @@ UCD use case diagram</br>
 <a href="https://github.com/GabrielBalzer/hypercasualgame">General GitHub Repository</a></br>
 <a href="https://github.com/GabrielBalzer/hypercasualgame/tree/master/hellocucumber">Cucumber Testing GitHub</a></br>
 <a href="https://github.com/GabrielBalzer/hypercasualgame/tree/master/tedsquest">Source Code Game GitHub</a></br>
-<a href="https://github.com/GabrielBalzer/hypercasualgame/blob/master/SAD.pdf">SAD</a></br>
-<a href="https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use-Case_diagram_updated.png">Overall Use-Case Diagram</a></br>
+<a href="https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/SAD.pdf">SAD</a></br>
+<a href="https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use-Case_diagram.png">Overall Use-Case Diagram</a></br>
 
 ## 1.5 Overview
 
@@ -99,7 +99,7 @@ In both cases, the application is directly installed on the OS. There will be a 
 mainly for the global challenging mode. However, the data of singleplayers will also be able to connect to 
 the server to save their local data and play in global challenges.
 
-<div align="center"><img src="https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use-Case_diagram.png" alt="UCD Ted's Quest" /></div>
+<div align="center"><img src="https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use-Case_diagram.png" alt="UCD Ted's Quest" /></div>
 
 **Design and Implementation Constraints:**
 There are some contraints regarding the design and the implementation.
@@ -117,13 +117,13 @@ the account he logged in, change the sound or the appearence or start the game i
 
 **Use Cases:**</br>
 <ul>
-<li><a href = "https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use%20Cases/UC_Mainmenu.md">Use Case: Main Menu</a></br></li>
-<li><a href = "https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use%20Cases/UC_Settings.md">Use Case: Settings</a></br></li>
-<li><a href = "https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use%20Cases/UC_Storymenu.md">Use Case: Story Menu</a></br></li>
-<li><a href = "https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use%20Cases/UC_Soundsettings.md">Use Case: Soundsettings</a></br></li>
-<li><a href = "https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use%20Cases/UC_MoveRight.md">Use Case: Move Right</a></br></li>
-<li><a href = "https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use%20Cases/UC_Jump.md">Use Case: Jump</a></br></li>
-<li><a href = "https://github.com/GabrielBalzer/hypercasualgame/blob/master/documentation/Use%20Cases/UC_Shoot.md">Use Case: Shoot</a></br></li>
+<li><a href = "https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use%20Cases/UC_Mainmenu.md">Use Case: Main Menu</a></br></li>
+<li><a href = "https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use%20Cases/UC_Settings.md">Use Case: Settings</a></br></li>
+<li><a href = "https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use%20Cases/UC_Storymenu.md">Use Case: Story Menu</a></br></li>
+<li><a href = "https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use%20Cases/UC_Soundsettings.md">Use Case: Soundsettings</a></br></li>
+<li><a href = "https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use%20Cases/UC_MoveRight.md">Use Case: Move Right</a></br></li>
+<li><a href = "https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use%20Cases/UC_Jump.md">Use Case: Jump</a></br></li>
+<li><a href = "https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use%20Cases/UC_Shoot.md">Use Case: Shoot</a></br></li>
 </ul>
 
 **Product Functions:**

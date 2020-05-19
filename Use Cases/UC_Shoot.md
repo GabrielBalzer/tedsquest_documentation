@@ -47,4 +47,4 @@ This Use-Case is just useable after starting the story in one of the chapters.
 
 ## 6. Function Points
 
-(n/a)
+![FP_Settings](../FunctionPoints/UC_Shoot.PNG)

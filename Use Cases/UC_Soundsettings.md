@@ -47,4 +47,4 @@ The settings menu includes a button for this function.
 
 ## 6. Function Points
 
-(n/a)
+![FP_Settings](../FunctionPoints/UC_Sound.PNG)
