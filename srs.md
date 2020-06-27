@@ -66,12 +66,20 @@ The purpose of this document is to build a hypercasualed game for computer and m
 
 ## 1.2 Scope
 
-The game is aimed to be enjoyable, fun and to challenge one or many. Based on a Server-Client-connection, it shall connect multiple users in a further step, to play against each other.
+The game is aimed to be enjoyable, fun and to challenge one or many. The application should be free to download from our GitHub-Server. 
+In a first step, there is no need to keep an active internet connection. 
+In a further step it should be possible to login and require an active internet connection for a global user highscore. 
+Also in a first step, the game is a free computer application with one or two manually crafted levels. 
+In a further step, the game should be playable on Android smartphones, contain additional manually crafted levels and an infinite mode. 
+Then, in a third step of development, there should be automatically crafted levels and a store to purchase clothing and weapons for the player. 
+These should be bought with either credits from playing the game or real money. The actual overall scope is defined by use cases.
 
 ## 1.3 Definitions, Acronyms, and Abbreviations
 
-OS operating system</br>
-UCD use case diagram</br>
+OS <ensp> operating system</br>
+UCD <ensp> use case diagram</br>
+Player <ensp> character in the game</br>
+User <ensp> person playing the game</br>
 
 ## 1.4 References
 
@@ -79,7 +87,9 @@ UCD use case diagram</br>
 <a href="https://dhbw-karlsruhe.myjetbrains.com/youtrack/dashboard?id=f29a1b9e-a4f4-4c06-8ad9-c7f0e6cc7e58">YouTrack Documentation</a></br>
 <a href="https://github.com/GabrielBalzer/hypercasualgame">General GitHub Repository</a></br>
 <a href="https://github.com/GabrielBalzer/hypercasualgame/tree/master/hellocucumber">Cucumber Testing GitHub</a></br>
+<a href="https://github.com/GabrielBalzer/tedsquest_documentation/">User Testing</a></br>
 <a href="https://github.com/GabrielBalzer/hypercasualgame/tree/master/tedsquest">Source Code Game GitHub</a></br>
+<a href="">Documentation Game GitHub</a></br>
 <a href="https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/SAD.pdf">SAD</a></br>
 <a href="https://github.com/GabrielBalzer/tedsquest_documentation/blob/master/Use-Case_diagram.png">Overall Use-Case Diagram</a></br>
 
@@ -103,17 +113,14 @@ the server to save their local data and play in global challenges.
 
 **Design and Implementation Constraints:**
 There are some contraints regarding the design and the implementation.
-For dessign, there are issues with the vary of the displays on smartphones, tablets and computers.
-Even the control differs from device to device as described in the previous subchapter.
-However, the server is the centralized data storage. Its behaviour depends on the amount of available 
-SQL queries. The provided way of communication between players over our server is depending on the 
-user device and the server device.
-There also are constraints for the memory allocation in all these devices. We want to provide an 
-application with little installation effort regarding the memory size and temporary allocation.
+For design, there are issues with the format that the Unity Engine accepts. Since the game is aimed to be excecutable on a computer, not a smartphone, the control remains simple by using the keyboard.
+Also in a first step of implementation, it is not required to use an active internet connection. All game actions will be local on the computer.
+The game is aimed to be installed with a small effort as possible and little disk space requirements.
 
 **User Charactistics:**
 Based on the use case diagrams (UCD) the user can check the application's settings like managing 
 the account he logged in, change the sound or the appearence or start the game itself. 
+By starting the second semester, we will shorten or enlarge the scope.
 
 **Use Cases:**</br>
 <ul>
@@ -127,10 +134,12 @@ the account he logged in, change the sound or the appearence or start the game i
 </ul>
 
 **Product Functions:**
-(n/a)
+The user shall be able to easily install and execute the application. It should also be easy to remote the application again.
+The game is aimed to be self-explaining and can be played by an age range from 6 to 100 years. A first requirement is to play it as single user locally.
 
 **Assumptions:**
-(n/a)
+Ted's Entertainment assumes the starting and ending of the application to be self-explaining since these functions are provided similar to other computer applications.
+Also all parts that the Unity Framework provides are assumed to be correct.
 
 # 3. Specific Requirements
 
@@ -142,11 +151,13 @@ the account he logged in, change the sound or the appearence or start the game i
 
 A functional requirement shall be the login account. The user shall be able to choose between 
 a new local account or login with his Google account.
+This requirement is outdated for the actual scope.
 
 ### 3.1.2 Functional Requirement Two - Manage Account
 
 It shall be possible for the user to manage his account. Therefore it shall be possible to 
 logout, delete the account or update any personal information.
+This requirement is outdated for the actual scope.
 
 ### 3.1.3 Functional Requirement Three - Manage Sound
 
@@ -156,6 +167,7 @@ globally.
 ### 3.1.4 Functional Requirement Four - User Interface
 
 The application shall provide two views, a dark and a light mode.
+This requirement is outdated for the actual scope.
 
 ### 3.1.5 Functional Requirement Five - About
 
@@ -171,15 +183,32 @@ the previous level has not been ended successfully, the level shall be locked.
 ### 3.1.7 Functional Requirement Seven - Customization
 
 It shall be possible to customize the main character, the stickman. 
+This requirement is outdated for the actual scope.
 
 ### 3.1.8 Functional Requirement Eight - Upgrade
 
 It shall be possible to upgrade the weapons and powerups by purchasing objects by both, real 
 money and collected coins from the playthrough.
+This requirement is outdated for the actual scope.
 
 ### 3.1.9 Functional Requirement Nine - Update the Application
 
 The application shall update itself automatically, without user input.
+This requirement is outdated for the actual scope.
+
+### 3.1.10 Functional Requirement Ten - Jump
+
+It shall be possible to make the player jump.
+
+### 3.1.11 Functional Requirement Twelve - Move Right
+
+It shall be possible to move right in order to collect coins and avoid obstacles.
+
+### 3.1.12 Functional Requirement Thirteen - Shoot 
+
+It shall be possible to shoot or destroy objects. Objects are boxes. 
+In a first integration step there will be only one way to destroy the boxes, by running through them.
+
 
 ## 3.2 Usability
 
@@ -202,16 +231,18 @@ shall not get to know it. The application shall rebuild itself.
 
 There shall be a tutorial in the beginning of the game after the first start. It shall be 
 possible to always access the tutorial.
+This requirement is outdated for the actual scope.
 
 ### 3.2.5 Usability Requirement Five - Report to the Developers
 
 The user shall have a way to report a problem or give positive and negative feedback.
+This requirement is outdated for the actual scope.
 
 ### 3.2.6 Usability Requirement Six - Leave Game 
 
-It shall be possible to leave the game at any time. Either by clicking on "back", on clicking 
-the "home button" both on the smartphone or by clicking "X" which represents the exit button.
-Also when leaving the focus on the game on the operating system, the application shall pause.
+It shall be possible to leave the game at any time. By pressing "escape" on the keyboard, there shall be shown a sub menu if the user 
+want to either resume or leave the game.
+Also when leaving the game by clicking on "X" on the top of the window, the application shall stop.
 
 ## 3.3 Reliability
 
@@ -221,12 +252,7 @@ While using the application, it shall be fluent. There shall no stuttering or lo
 
 ### 3.3.2 Reliability Requirement Two - Application Crash
 
-When the application crashes, it shall not crash. It shall recover itself in a way, the user 
-will not be affected.
-
-### 3.3.3 Reliability Requirement Three - Time to Repair
-
-The time to repair the system shall not overexceed one minute.
+When the application crashes, Unity provides an crash handler itself.
 
 ## 3.4 Performance
 
@@ -236,7 +262,7 @@ The application shall run at atleast 30 FPS.
 
 ### 3.4.2 Performance Requirement Two - User Capacity
 
-The game shall be for a single user only per installation.
+The game shall be for a single user only as per installation.
 
 ### 3.4.3 Performance Requirement Three - Local Resources
 
@@ -254,6 +280,7 @@ be divided into a MVC-relied way.
 
 Reported bugs shall be updated in the source code every month. So, many bugs can be fixed in 
 one time and the time to maintain the code is reduced.
+This requirement is outdated for the actual scope.
 
 ## 3.6 Design Constraints
 
@@ -277,13 +304,14 @@ We decided to use the following tools, to help developing the game:</br>
 <li><b>Visual Studio</b> IDE used for scripting within Unity</br></li>
 </ul>
 
-## 3.7 On-line User Documentation and Help System Requirements
+## 3.7 Online User Documentation and Help System Requirements
 
 There shall be a link to report bugs in the settings of the application. 
+This requirement is outdated for the actual scope, since the internet connection is not required yet.
 
 ## 3.8 Purchased Components
 
-(n/a) 
+Ted's Entertainment has not bought anything in order to develop the game.
 
 ## 3.9 Interfaces
 
@@ -294,19 +322,21 @@ The used interface is decided by the Unity Framwork.
 
 There shall be a dark mode and a light mode, chosen by the user. Initially the light mode is 
 turned on.
+This requirement is outdated for the actual scope.
 
 ### 3.9.2 Hardware Interfaces
 
-The application is mostly hardware indepenent. At the time for the first release, there shall 
-be no support for smartphones of the company Apple.
+The application is mostly hardware indepenent. At the time of the first official release, 
+the application is available for both operating systems, Windows and Mac OS. In a further release, 
+the application shall be available for Android-based smartphones.
 
 ### 3.9.3 Software Interfaces
 
-(n/a)
+There are no software interfaces implemented since all connections go to and come from the Unity Framework.
 
 ### 3.9.4 Communications Interfaces
 
-(n/a)
+Refer to above 3.9.3.
 
 ## 3.10 Licensing Requirements
 
@@ -318,8 +348,8 @@ The developers are not responsible for any impact, the game might have on the us
 
 ## 3.12 Applicable Standards
 
-(n/a) 
+There are no used standards that can be referenced to.
 
 # 4. Supporting Information
 
-(n/a)
+The application contains a link to the GitHub repository. There, all necessary documents can be found.
