@@ -15,7 +15,8 @@ Revision History
 
 | **Date** | **Version** | **Description** | **Author** |
 | --- | --- | --- | --- |
-| \&lt;dd/mmm/yy\&gt; | \&lt;x.x\&gt; | \&lt;details\&gt; | \&lt;name\&gt; |
+| \&lt;27/oct/19\&gt; | \&lt;1.0\&gt; | \&lt;initial description\&gt; | \&lt;Michaela Fleig\&gt; |
+| \&lt;27/jun/20\&gt; | \&lt;1.1\&gt; | \&lt;updated information\&gt; | \&lt;Michaela Fleig\&gt; |
 |   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
