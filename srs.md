@@ -15,7 +15,7 @@ Revision History
 
 | **Date** | **Version** | **Description** | **Author** |
 | --- | --- | --- | --- |
-| 27/oct/19 | 1.0\ | initial description | Michaela Fleig |
+| 27/oct/19 | 1.0 | initial description | Michaela Fleig |
 | 27/jun/20 | 1.1 | updated information | Michaela Fleig |
 |   |   |   |   |
 |   |   |   |   |
